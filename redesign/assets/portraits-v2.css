@@ -1,0 +1,8 @@
+/* Enhanced sibling images; originals retained in assets. */
+.portrait{width:170px;height:auto;aspect-ratio:100/139;filter:none;border-radius:6px;object-fit:cover}
+.person{grid-template-columns:170px 1fr;gap:28px}
+.bio{grid-template-columns:240px 1fr;gap:55px}
+.bio .portrait{width:240px}
+@media(max-width:1000px) and (min-width:761px){.person{grid-template-columns:130px 1fr;gap:20px}.person .portrait{width:130px}}
+@media(max-width:760px){.person{grid-template-columns:125px 1fr;gap:22px}.person .portrait{width:125px}.bio{grid-template-columns:1fr;gap:25px}.bio .portrait{width:190px}.team-grid{gap:42px}}
+@media(max-width:370px){.person{grid-template-columns:1fr}.person .portrait{width:160px}}

@@ -1,0 +1,133 @@
+/* Typography and spacing refinement. Loaded after the approved portrait sizes. */
+:root{
+  --section-space:clamp(64px,7.5vw,104px);
+  --column-gap:clamp(32px,5vw,72px);
+  --body-leading:1.75;
+  --reading-width:64ch;
+}
+body{font-size:17px;line-height:var(--body-leading)}
+h1,h2,h3{text-wrap:balance;letter-spacing:-.028em}
+h1{line-height:1.08}
+h2{font-size:clamp(34px,4vw,52px);line-height:1.16}
+h3{line-height:1.22;letter-spacing:-.018em}
+p{margin-bottom:1.35em;text-wrap:pretty}
+.wrap{width:min(1200px,calc(100% - 96px))}
+.section{padding-block:var(--section-space)}
+.header-inner{min-height:96px;gap:32px}
+.brand-name{letter-spacing:-.035em}
+.brand small{letter-spacing:1.5px;line-height:1.3}
+.nav{font-size:14px;gap:25px;line-height:1.5}
+.nav a{padding-block:12px}
+.nav .nav-contact{padding:12px 20px}
+.hero-inner{padding-block:82px 92px}
+.hero h1{font-size:clamp(58px,6.5vw,88px);line-height:1.08;letter-spacing:-.035em;max-width:810px;margin-bottom:0}
+.hero p{font-size:18px;line-height:1.65;margin:28px 0 34px;max-width:430px}
+.location{font-size:14px;line-height:1.5;margin-bottom:28px}
+.location:before{flex-shrink:0}
+.button{font-size:15px;line-height:1.4;padding:15px 24px;min-height:52px}
+.text-link{font-size:15px;line-height:1.5;padding-bottom:7px}
+.actions{gap:28px}
+.practice-choice{padding:36px max(48px,calc((100vw - 1200px)/2));padding-right:48px;gap:28px}
+.practice-choice:nth-child(2){padding:36px max(48px,calc((100vw - 1200px)/2)) 36px 48px}
+.practice-choice h2{font-size:clamp(27px,2.65vw,34px);line-height:1.2;margin-bottom:10px;text-wrap:pretty}
+.practice-choice p{font-size:15px;line-height:1.55}
+.intro-grid{gap:var(--column-gap);grid-template-columns:1fr 1fr}
+.intro-copy{padding-top:44px}
+.intro-copy p,.prose p,.bio p{max-width:var(--reading-width)}
+.eyebrow{font-size:14px;line-height:1.5;margin-bottom:20px}
+.rule-note{font-size:13px;line-height:1.6;margin-top:32px;padding-top:24px}
+.section-head{margin-bottom:44px;gap:40px}
+.section-head .text-link{flex-shrink:0}
+.section-head h2{max-width:24ch}
+.team-grid{gap:48px}
+.person{gap:28px;min-width:0}
+.person>div{min-width:0}
+.person h3{font-size:30px;line-height:1.17;margin-bottom:12px}
+.person .role{font-size:13px;line-height:1.55;margin-bottom:18px}
+.person p{font-size:16px;line-height:1.65;margin-bottom:22px}
+.results{gap:40px;margin:40px 0 28px}
+.result{padding-top:26px}
+.amount{font-size:44px;line-height:1.15;letter-spacing:-.025em;margin-bottom:20px;font-variant-numeric:lining-nums tabular-nums}
+.result p,.timeline p{font-size:16px;line-height:1.7}
+.fine{font-size:13px;line-height:1.65}
+.contact-band{padding-block:72px}
+.contact-inner h2{margin-bottom:0}
+.footer{padding-top:56px}
+.footer p,.footer a:not(.brand){font-size:14px;line-height:1.75}
+.footer-links{gap:12px}
+.footer-bottom{font-size:12px;line-height:1.6;margin-top:40px;padding-top:24px}
+.footer-bottom a{font-size:12px!important}
+.page-head{padding-block:64px 68px}
+.page-head h1{font-size:clamp(46px,5.6vw,76px);line-height:1.1;letter-spacing:-.03em;max-width:21ch;margin-bottom:0}
+.page-head p{max-width:57ch;font-size:18px;line-height:1.7;margin-top:26px}
+.split{grid-template-columns:240px minmax(0,1fr);gap:var(--column-gap)}
+.side-nav a{font-size:14px;line-height:1.55;padding-block:13px}
+.prose h2{font-size:38px;line-height:1.2}
+.service summary{font-size:28px;line-height:1.3;letter-spacing:-.02em;padding-block:26px}
+.service .service-body{padding:0 24px 28px 0}
+.service-body a{font-size:15px;line-height:1.6}
+.bio{column-gap:64px;padding-block:64px}
+.bio h2{font-size:44px;line-height:1.15;margin-bottom:24px}
+.bio .role{font-size:14px;line-height:1.5;margin-bottom:12px}
+.bio h3{font-size:27px;margin-top:32px;margin-bottom:16px}
+.bio ul{padding-left:22px;margin:0 0 28px;max-width:var(--reading-width)}
+.bio li+li{margin-top:10px}
+.all-results{gap:28px 64px;margin-top:40px}
+.all-results .amount{font-size:38px}
+.all-results .result p{max-width:52ch}
+.timeline{gap:48px;margin-top:56px}
+.contact-grid{gap:var(--column-gap);grid-template-columns:1fr 1.15fr}
+.form-box{padding:40px}
+.form-note{font-size:14px;line-height:1.65}
+.field{margin-bottom:24px}
+.field label{font-size:14px;line-height:1.5;margin-bottom:9px}
+.field input,.field select,.field textarea{font-size:16px;line-height:1.6;padding:12px 14px}
+.form-status{font-size:15px;line-height:1.6}
+.address{margin-top:32px;padding-top:28px}
+.address p{font-size:16px}
+.office-panel{padding:36px;margin-top:36px}
+.sitemap-grid{gap:48px}
+@media(max-width:1000px){
+  .wrap{width:calc(100% - 64px)}
+  .header-inner{gap:20px}.nav{gap:15px;font-size:13px}.nav .nav-contact{padding-inline:14px}
+  .practice-choice,.practice-choice:nth-child(2){padding:32px}
+  .team-grid{gap:32px}.person{gap:22px}.person h3{font-size:27px}
+  .bio{gap:40px}.split{grid-template-columns:210px minmax(0,1fr)}
+}
+@media(max-width:760px){
+  body{font-size:16px;line-height:1.75}
+  .wrap{width:calc(100% - 40px)}
+  .header-inner{min-height:80px;gap:12px}.nav{top:80px;font-size:16px;gap:4px}.nav a{padding:13px 12px}
+  .brand-name{font-size:21px}.brand{gap:10px}.brand small{font-size:8px;letter-spacing:1.2px}.menu-toggle{font-size:14px;padding:9px 12px}
+  .hero{min-height:570px}.hero-inner{padding-block:56px 64px}
+  .hero h1{font-size:clamp(43px,11.8vw,64px);line-height:1.1;letter-spacing:-.035em}
+  .hero p{font-size:17px;line-height:1.65;margin:25px 0 30px}
+  .location{font-size:12px;line-height:1.65;margin-bottom:24px;gap:10px}
+  .actions{gap:22px}.button{font-size:14px;padding:15px 20px}
+  .practice-choice,.practice-choice:nth-child(2){padding:28px 20px;gap:20px}
+  .practice-choice h2{font-size:29px}.practice-choice p{font-size:14px}
+  .intro-grid,.contact-grid,.split{grid-template-columns:1fr;gap:32px}
+  .intro-copy{padding-top:0}.intro-copy p{max-width:none}
+  .eyebrow{font-size:13px;margin-bottom:18px}
+  .section-head{gap:24px;margin-bottom:32px}.section-head h2{max-width:22ch}
+  .team-grid{gap:40px}.person{grid-template-columns:125px minmax(0,1fr);gap:24px}
+  .person h3{font-size:26px;line-height:1.2}.person p{font-size:15px;line-height:1.65;margin-bottom:18px}
+  .person .role{font-size:13px;margin-bottom:14px}
+  .results{gap:26px;margin-top:32px}.result{grid-template-columns:1fr;gap:0;padding-top:24px}
+  .amount{font-size:38px;margin-bottom:14px}.result p{font-size:16px;max-width:40ch}
+  .page-head{padding-block:44px 48px}.page-head h1{font-size:clamp(39px,10.5vw,56px);line-height:1.13}
+  .page-head p{font-size:17px;line-height:1.7;margin-top:22px}
+  .side-nav a{padding-block:12px}.service summary{font-size:25px;padding-block:24px}
+  .bio{grid-template-columns:1fr;gap:28px;padding-block:48px}.bio h2{font-size:36px;margin-bottom:22px}
+  .bio p,.bio li{font-size:16px;line-height:1.75}.bio h3{font-size:26px;margin-top:28px}
+  .all-results{gap:24px;margin-top:32px}.all-results .amount{font-size:36px}
+  .timeline{gap:24px;margin-top:36px}.timeline p{font-size:16px}
+  .contact-band{padding-block:56px}.contact-inner{gap:28px}
+  .form-box{padding:26px 22px}.office-panel{padding:28px 24px}
+  .footer{padding-top:44px}.footer-grid{gap:32px}.footer-bottom{gap:16px;margin-top:32px}
+}
+@media(max-width:390px){
+  .person{grid-template-columns:1fr;gap:22px}.person .portrait{width:170px}
+  .person h3{font-size:30px}.person p{max-width:36ch}
+}
+@media(max-width:350px){.brand-name{font-size:18px}.brand small{font-size:7px}.seal{width:27px;height:36px}.wrap{width:calc(100% - 32px)}}
